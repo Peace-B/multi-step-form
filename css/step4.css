@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*:root {
+    --Marine: hsl(213, 96%, 18%);
+    --Purplish: hsl(243, 100%, 62%);
+    --Pastel: hsl(228, 100%, 84%);
+    --Light: hsl(206, 94%, 87%);
+    --Strawberry: hsl(354, 84%, 57%);
+    --Cool: hsl(231, 11%, 63%);
+    --Light: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --paragragh: 16px;
+    --family: "ubuntu" sans-serif;
+    --fw-semi: 400;
+    --fw-bold: 500;
+    --fw-xbold: 700;
+}

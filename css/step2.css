@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*:root {
+    --Marine: hsl(213, 96%, 18%);
+    --Purplish: hsl(243, 100%, 62%);
+    --Pastel: hsl(228, 100%, 84%);
+    --Light: hsl(206, 94%, 87%);
+    --Strawberry: hsl(354, 84%, 57%);
+    --Cool: hsl(231, 11%, 63%);
+    --Light: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --paragragh: 16px;
+    --family: "ubuntu" sans-serif;
+    --fw-semi: 400;
+    --fw-bold: 500;
+    --fw-xbold: 700;
+}
+
+a, button, a:active, a:focus {
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+
+body {
+  background-color: var(--Magnolia);
+  font-family: var(--family);
+
+}
+
+main {
+  background-image: url("../assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  position: relative;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  border: 1px solid var(--White);
+}
+.one {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+.nav-btn :nth-child(1):hover {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+section {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: var(--Alabaster);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.top h4,
+label {
+  color: var(--Marineblue);
+}
+p {
+  color: var(--Coolgray);
+}
+::placeholder {
+  color: var(--Coolgray) !important;
+}
+.next-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--White);
+}
+.next-btn .btn {
+  position: relative;
+  background-color: var(--Marine);
+  color: var(--White);
+}
+.next-btn :nth-child(1){
+    background-color: var(--White);
+    color: var(--Cool);
+    text-decoration: none;
+}
+
+.btn-container{
+  margin-top: 2rem;
+}
+.btn-container a{
+  background-color: var(--Marine) !important;
+  color: var(--Lightblue);
+  border: none;
+  text-decoration: none;
+}
+.btn-container a:hover{
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+  opacity: .9;
+}
+
+.box {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Cool);
+    border-radius: 10px;
+}
+
+.box :hover {
+    border: 1px solid var(--Purplish);
+}
+
+.box-content h4 {
+    color: var(--Marine);
+}
+
+.box-content p {
+color: var(--cool);
+}
+
+.box-content {
+    line-height: 5px;
+}
+
+.row :nth-child(4) {
+  height: 8vh;
+  background-color: var(light);
+  justify-content: space-evenly;
+  border: none;
+}
+
+.form-check-input {
+  background-color: var(--Marine) !important;
+}
+
+.form-check-input, .form-input {
+  box-shadow: none;
+  border: none;
+}
+
+.top h4 {
+  color: var(--Marine);
+}
+
+p {
+  color: var(--cool);
+}
+
+
+/* madia query */
+
+@media (min-width: 768px) and (max-width: 900px){
+  section{
+    margin-top: 2rem;
+  }
+} 
+
+@media (min-width: 900px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  main {
+    width: 30% !important;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  section {
+    width: 60% !important;
+    height: 70vh;
+    margin-top: 2.5rem;
+  }
+  main,
+  section {
+    position: static;
+    background-color: var(--White);
+  }
+
+  .nav-btn :nth-child(1) {
+    margin-top: 0;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    margin-top: 2rem;
+     margin-left: 1.5rem;
+  }
+
+  .nav-content span {
+    color: var(--Coolgray);
+  }
+  .nav-content h5 {
+    color: var(--White);
+  }
+
+  .btn-container a {
+    background-color: var(--Marine);
+    color: var(--White);
+  }
+}
