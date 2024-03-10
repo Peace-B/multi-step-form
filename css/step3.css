@@ -1,19 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
-*:root {
-    --Marine: hsl(213, 96%, 18%);
-    --Purplish: hsl(243, 100%, 62%);
-    --Pastel: hsl(228, 100%, 84%);
-    --Light: hsl(206, 94%, 87%);
-    --Strawberry: hsl(354, 84%, 57%);
-    --Cool: hsl(231, 11%, 63%);
-    --Light: hsl(229, 24%, 87%);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root{
+     --Marineblue: hsl(213, 96%, 18%);
+    --Purplishblue: hsl(243, 100%, 62%);
+    --Pastelblue: hsl(228, 100%, 84%);
+    --Lightblue: hsl(206, 94%, 87%);
+    --Strawberryred: hsl(354, 84%, 57%);
+    --Coolgray: hsl(231, 11%, 63%);
+    --Lightgray: hsl(229, 24%, 87%);
     --Magnolia: hsl(217, 100%, 97%);
-     --Alabaster: hsl(231, 100%, 99%);
+    --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
-    --paragragh: 16px;
-    --family: "ubuntu" sans-serif;
+    --para: 16px;
+    --family: "ubuntu", "sans-serif";
     --fw-semi: 400;
     --fw-bold: 500;
     --fw-xbold: 700;
+}
+
+
+main{
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+    display: flex;
+    height: 30vh;
+    background-size: cover;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.oook{
+    background-color: var(--Magnolia);
+}
+
+.one,
+.two,
+.three,
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: 1px solid var(--White);
+    
+}
+
+.nav-btn :nth-child(1):hover{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+}
+section{
+    position: absolute;
+    top: 20%;
+    width: 200px;
+    background-color: var(--White);
+    padding: 10px;
+    border-radius: 10px;
+}
+.form-control:focus{
+    box-shadow:none !important; 
+    border: 1px solid var(--Marineblue);
+    outline: none !important;
+}
+
+.top h2 , label{
+    color: var(--Marineblue);
+}
+p{
+
+    color: var(--Coolgray);
+}
+input::placeholder{
+    color: var(--Coolgray) !important;
+}
+.next-btn{
+    width: 100%;
+    bottom: 0%;
+    background-color: var(--White);
+    padding: 10px;
+}
+.next-btn .btn{
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.next-btn .btns{
+    text-decoration: none;
+    color: var(--Coolgray);
+    margin-top: 20px;
+}
+.rice{
+    display: flex;
+    border: 1px solid var(--Coolgray);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 16px;
+}
+.rices{
+    line-height: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.rices h6, .beans h6, .teas h6 {
+color: var(--Marineblue);
+}
+
+.rices p, .beans p, .teas p {
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+}
+
+.bean{
+    display: flex;
+    border: 1px solid var(--Coolgray);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 16px;
+}
+.beans{
+    line-height: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.tea{
+    display: flex;
+    border: 1px solid var(--Coolgray);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 16px;
+}
+.teas{
+    line-height: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+span {
+    color: var(--Purplishblue);
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+/* media query*/
+
+@media(min-width:768px) and (max-width:900px){
+    section{
+        margin-top: 2rem;
+    }
+}
+
+@media(min-width: 900px){
+    body{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    .main-container{
+        display: flex;
+        background-color: var(--White);
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 75vh;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    main{
+        height: 70vh;
+        flex-direction: column;
+        width: 25% !important;
+        background-image: url(../assets/images/bg-sidebar-desktop.svg);
+        background-size: cover;
+        background-position: 100%;
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
+    section{
+        width: 60% !important;
+        height: 70vh;
+    }
+    main, section{
+        position: static;
+    }
+    .rice, .bean, .tea{
+        height: 75px;
+    }
+    .rices, .beans, .teas{
+        font-size: 18px;
+    }
+}  
+.one,
+.two,
+.three,
+.four{
+    margin-top: 0%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.three{
+    color: var(--Marineblue);
+    background-color: var(--Lightblue);
+}
+
+.nav-content span{
+    color: var(--Coolgray);
+}
+.nav-content h5{
+    color: var(--White);
+}
+.nav-btn{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+.n-btn{
+    display: flex;
+    justify-content:flex-end;
+    padding-top: 12rem;
 }

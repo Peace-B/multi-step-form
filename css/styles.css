@@ -1,31 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
-
-:root {
-    --Marine: hsl(213, 96%, 18%);
-    --Purplish: hsl(243, 100%, 62%);
-    --Pastel: hsl(228, 100%, 84%);
-    --Light: hsl(206, 94%, 87%);
-    --Strawberry: hsl(354, 84%, 57%);
-    --Cool: hsl(231, 11%, 63%);
-    --Light: hsl(229, 24%, 87%);
+:root{
+    --Marineblue:  hsl(213, 96%, 18%);
+    --Purplishblue: hsl(243, 100%, 62%);
+    --Pastelblue: hsl(228, 100%, 84%);
+    --Lightblue: hsl(206, 94%, 87%);
+    --Strawberryred: hsl(354, 84%, 57%);
+    --Coolgray: hsl(231, 11%, 63%);
+    --Lightgray: hsl(229, 24%, 87%);
     --Magnolia: hsl(217, 100%, 97%);
-     --Alabaster: hsl(231, 100%, 99%);
+    --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
     --para: 16px;
-    --family: "ubuntu" sans-serif;
-    --fw-semi: 400;
-    --fw-bold: 500;
-    --fw-xbold: 700;
+    --family: "Ubuntu", "Sans-Serif";
+    --fw-semi:400;
+    --fw-bold:500;
+    --fw-xbold:700;
 }
-
-body {
-    background-color: var(--Light) !important;
+body{
+    /* max-width: 1440px;
+    min-width: 375px; */
+    font-family:var(--family);
+    background-color: var(--Magnolia);
+    /* height: 70vh; */
 }
-
-
-main {
+main{
     background-image: url(../assets/images/bg-sidebar-mobile.svg);
     background-size: cover;
     display: flex;
@@ -33,17 +32,19 @@ main {
     height: 30vh;
     position: relative;
 }
-
-/* main div:not(.one):hover {
-    background-color: var(--Pastel);
-    color: var(--Marine);
+/* parent takes position relative while what u want to shift takes position absolute */
+/* main div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border:1px solid var(--White);
 } */
-
-
-.one, 
-.two, 
-.three, 
-.four {
+.one,
+.two,
+.three,
+.four{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,162 +54,150 @@ main {
     padding: 10px;
     border-radius: 50%;
     margin-top: 2rem;
-    border: 1px solid var(--White);
+    border:1px solid var(--White);
 }
-
-.one {
-    background-color: var(--Pastel);
-    color: var(--Marine);
+.one{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
 }
-
+/* main div:not(.one):hover{
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+} */
 .nav-btn :nth-child(1):hover{
-    background-color: var(--Light);
-    color: var(--Marine);
+    background-color:var(--Lightblue) ;
+    color: var(--Marineblue);
 }
-
-section {
+section{
     position: absolute;
-    top: 20%;
-    background-color: var(--Alabaster);
-    border-radius: 10px;
+    top: 17.5%;
+    width: 200px;
+    background-color: var(--White);
     padding: 10px;
-    
+    border-radius: 10px;
 }
-
-.form-control:focus {
-    box-shadow: none;
-    border: 1px solid var(--Purplish);
+.form-control{
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+.form-control:focus{
+    box-shadow:none;
+    border: 1px solid var(--Purplishblue);
     outline: none;
 }
-
-.top h4 {
-    color: var(--Marine);
+.top h4, label{
+    color: var(--Marineblue);
 }
-
-p {
-    color: var(--Light);
+p{
+    color: var(--Coolgray);
 }
-
-label {
-    color: var(--Marine);
+::placeholder{
+    color: var(--Coolgray) !important; 
 }
-
-::placeholder {
-color:var(--Light) !important;
+.input-error{
+    border: 2px solid var(--Strawberryred);
 }
-
-.next-btn{   
-    width: 100%;
+.error{
+    color: var(--Strawberryred);
+    font-size: 12px;
+}
+.next-btn{
     position: absolute;
     bottom: 0;
-    background-color: var(--Alabaster);
+    background-color: var(--White);
+    width: 100%;
+    padding-right: 2rem;
+   
 }
-
-.next-btn .btn {
-    right: -60%;
+.next-btn .btn{
     position: relative;
-    background-color: var(--Marine);
-    color: var(--Alabaster);
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
 }
+.btn-container{
+    margin-top: 2rem;
+  }
+  .btn-container a{
+    background-color: var(--Marineblue);
+    color: var(--Lightblue);
+    border: none;
+    text-decoration: none;
+  }
 
-@media(min-width:600px){
-       body{
+/* media query */
+@media(min-width) and (max-width:900px){
+    section{
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 900px){                                                                                                                  
+    body{
+        width: 100%;
         display: flex;
+        height: 100vh;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100vh;
-       }
-
-       .main-container {
-        width: 70%;
+    }
+     .main-container{
         display: flex;
+        height: 80vh;
         justify-content: space-between;
         align-items: center;
-        height: 80vh;
+        width: 70%;
         background-color: var(--White);
-        border-radius: 10px;
         padding: 15px;
-       
-       }
-
-       main {
-        width: 25% !important;
-        height: 80vh;
+        border-radius: 10px;
+     }
+     main{
+        width: 30% !important;
+        height: 75vh;
         flex-direction: column;
         background-image: url(../assets/images/bg-sidebar-desktop.svg);
-        background-size: cover;
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: 100%;
         justify-content: flex-start;
         border-radius: 10px;
-        
-       }
-
-       section {
+     }
+     main, section{
+        position: static;
+        background-color: var(--White);
+     }
+     section{
         width: 60% !important;
         height: 75vh;
+        margin-top: 2.5rem;
+     }
+     .nav-btn{
         margin-top: 2rem;
-       }
+        margin-left: 1rem;
+     }
 
-       main, section{
-        position: static;
-       }
-
-       .nav-btn {
-        margin: 25px 0 5px ;
-       }
-
-       .nav-btn :nth-child(1) {
+     .nav-btn :nth-child(1){
         margin-top: 0;
-       }
-
-       .nav-btn {
-        margin-top: 2rem;
-        margin-left: 1.5rem;
-       }
-
-       .one, 
-       .two, 
-       .three, 
-       .four {
+        
+     }
+     .one,
+     .two,
+     .three,
+     .four{
         width: 40px;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-       }
-
-       .nav-content :nth-child(1) {
-        color: var(--Cool);
-       }
-
-    .nav-content :nth-child(2) {
+     }
+     .desktop-only span{
+        color: var(--Coolgray);
+     }
+     .desktop-only h5{
         color: var(--White);
-    }
-
-    .n-btn {
-       display: flex; 
-       justify-content: flex-end;
-       padding-top: 12px;
-    }
-
+     }
+     .next-btn{
+        background: none;
+        margin-bottom: 4.5rem;
+        display: flex;
+        padding-left: 30rem;
+     }
     
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }

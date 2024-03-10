@@ -3,11 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/step4.css">
     <title>Step 4</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/step4.css">
+
+     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+     <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
 </head>
 <body>
+    <div class="main-container">
+        <main class="">
+            <div class="nav-btn d-md-flex justify-content-md-evenly align-items-md-center w-md-100">
+                <div class="one"><h4>1</h4></div>
+                <div class="desktop-only w-75 d-none d-md-block">
+                    <span>STEP 1</span>
+                    <h5>YOUR INFO</h5>
+                </div>
+            </div>
     
+            <div class="nav-btn d-md-flex justify-content-md-evenly align-items-md-center w-md-100">
+                <div class="two ms-3 ms-md-0" ><h4>2</h4></div>
+                <div class="desktop-only d-none d-md-block w-75">
+                    <span>STEP 2</span>
+                    <h5>SELECT PLAN</h5>
+                </div>
+            </div>
+    
+            <div class="nav-btn d-md-flex justify-content-md-evenly align-items-md-center w-md-100">
+                <div class="three mx-3 mx-md-0"><h4>3</h4></div>
+                <div class="desktop-only d-none d-md-block w-75">
+                    <span>STEP 3</span>
+                    <h5>ADD-ONS</h5>
+                </div>
+            </div>
+    
+            <div class="nav-btn d-md-flex justify-content-md-evenly align-items-md-center w-md-100">
+                <div class="four"><h4>4</h4></div>
+                <div class="desktop-only d-none d-md-block w-75">
+                    <span>STEP 4</span>
+                    <h5>SUMMARY</h5>
+                </div>
+            </div>
+            
+            <!-- <div class="two ms-4"><h2>2</h2></div>
+            <div class="three mx-4"><h2>3</h2></div>
+            <div class="four"><h2>4</h2></div> -->
+        </main>
+       
+        <section class="main-section col-10 offset-1 offset-md-0 p-3">
+            <!-- offset means margin both sides -->
+             <!-- form 1 -->
+            
+             <div action="">
+                <div class="top">
+                    <h4>Finishing up</h4>
+                    <p>Double-check everything looks OK before confirming.</p>
+                </div>
+                
+            <div class="row gap-3  ">
+                <div class="box1 col-12">
+                    <div class="box-content ms-2 ms-md-0">
+                       <div><h5><span id="plan"></span> <span id="change"></span></h5>
+                        <span><a href="./step2.html" style="font-size: 0.8rem;">Change</a></span></div>
+                        <div><h5 id="price"></h5></div>
+                    </div>
+                </div>
+                <div class="line col-12"></div>
+                <div class="box col-12" id="service">
+                    <div class="box-content ms-2 ms-md-0" >
+                            <p id="service1"></p>
+                            <h5 id="online"></h5>
+                    </div>
+                </div>
+                <div class="box col-12" id="larger" >
+                        <div class="box-content ms-2 ms-md-0" >
+                            <p id="larger1"></p>
+                            <h5 id="storage"></h5>
+                        </div>
+                </div>
+                <div class="box col-12" id="customize">
+                        <div class="box-content ms-2 ms-md-0"  >
+                            <p id="customize1"></p>
+                            <h5 id="profile"></h5>
+                        </div>
+                </div>
+            </div>
+            <div class="lbox col-12 ms-0 me-4 p-3">
+                
+                <p>Total <span id="per"></span></p>
+                <h5 id="total"></h5>
+                
+            </div>
+             </div>
+             <div class="btn-container d-none d-md-flex justify-content-between">
+                <a class="btn btn-lg mb-3" href="./step3.html" style="font-size: 14px;">Go Back</a>
+                <a class="btn btn-lg mb-3" href="./last.html">Confirm</a>
+              </div>
+            </section>
+          </div>
+          
+        
+          <div class="next-btn container py-3 d-md-none d-flex justify-content-between">
+            <a class="btn btn-lg mb-3 " href="./step3.html">Go Back</a>
+            <a class="btn btn-lg mb-3" href="./last.html">Confirm</a>
+          </div>
+
+          <script src="./js -folder/step4.js"></script>
 </body>
 </html>

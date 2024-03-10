@@ -29,7 +29,6 @@ main{
 
 
 }
-
 .oook{
     background-color: var(--Magnolia);
 }
@@ -50,89 +49,41 @@ main{
     border: 1px solid var(--White);
     
 }
-.two{
+.four{
     color: var(--Marineblue);
     background-color: var(--Lightblue);
 }
 
-.nav-btn :nth-child(1):hover{
-    background-color: var(--Lightblue);
-    color: var(--Marineblue);
-}
 section{
-    position: absolute;
-    top: 20%;
     width: 200px;
     background-color: var(--White);
-    padding: 10px;
     border-radius: 10px;
-}
-
-.top h2 , label{
-    color: var(--Marineblue);
-}
-
-.next-btn{
-    width: 100%;
-    bottom: 0%;
-    background-color: var(--White);
-    padding: 10px;
-    margin-top: 50px;
-}
-.next-btn .btn{
-    background-color: var(--Marineblue);
-    color: var(--Lightblue);
-    height: 40px;
+    padding: 30px;
     text-align: center;
-    margin-top: 10px;
-    
+    }
+section, .p{
+    color: var();
 }
-.next-btn .btns{
-    text-decoration: none;
-    color: var(--Coolgray);
-    margin-top: 20px;
-}
-.box-content p{
-    color: var(--Coolgray);
-}
-.box{
-    height: 10vh;
-    display: flex;
+section, img{
+    justify-content: center;
     align-items: center;
-    border: 1px solid var(--Coolgray);
-    border-radius: 10px;
 }
-
-a {
-    text-decoration: none;
-}
-
-.box-content{
-    line-height: 6px;
-}
-.btn-group{
-    width: 20px;
-    height: 20px;
-}
-.boxs{
-    background-color: var(--Lightgray);
-    height: 8vh;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-}
-.row{
-    padding: 15px;
-}
-
-.form-check-input {
-    background-color: var(--Marineblue) !important;
-}
-
-#arcade, #advance, #pro{
+h2{
     color: var(--Marineblue);
-    font-weight: var(--fw-bold);
 }
+p{
+    color: var(--Coolgray);
+}
+.container{
+    background-color: var(--Lightgray);
+    border-radius: 8px;
+    padding: 10px;
+}
+.top{
+    justify-content: center;
+    align-items: center;
+}
+
 /* media query*/
 
 @media(min-width:768px) and (max-width:900px){
@@ -172,47 +123,7 @@ a {
     section{
         width: 60% !important;
         height: 70vh;
+        justify-content: center;
+        align-self: center;
     }
-    main, section{
-        position: static;
-    }
-    .box{
-        flex-direction: column;
-        height: 20vh;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 10px 0 10px 10px;
-    }
-    .box:hover{
-        background-color:var(--Lightgray);
-    }
-    .box-content h4{
-        font-size:  16px;
-    }
-    .nav-content span{
-    color: var(--Coolgray);
-    }
-    .nav-content h5{
-    color: var(--White);
-    }
-.nav-btn{
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-}
-.n-btn{
-    display: flex;
-    justify-content:flex-end;
-    padding-top: 12rem;
-}
-}  
-.one,
-.two,
-.three,
-.four{
-    margin-top: 0%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
